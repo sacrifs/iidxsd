@@ -1,0 +1,10 @@
+*/config/development
+*/logs/log-*.php
+*/logs/!index.html
+*/cache/*
+*/cache/!index.html
+*/cache/!.htaccess
+dbimport.php
+*/config/database.php
+8bit/*
+test/*

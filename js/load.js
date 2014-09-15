@@ -1,0 +1,38 @@
+(function(){
+	Modernizr.load([{
+		load:"//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js",
+		complete:function(){
+			if(!window.jQuery){
+				Modernizr.load("js/libs/jquery/jquery.js");
+			}
+		}
+	},
+	{
+		load:[
+			"//cdnjs.cloudflare.com/ajax/libs/masonry/2.1.05/jquery.masonry.min.js",
+			"//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.2/jquery.cookie.min.js",
+		],
+		complete:function(){
+			if(!$.cookie){
+				Modernizr.load("js/jquery/jquery.cookie.js");
+				Modernizr.load("js/jquery/jquery.masonry.min.js");
+			}
+		}
+	},
+	{
+		load:[
+			"js/libs/spin.min.js"
+		],
+		complete:function(){
+
+		}
+	},
+	{
+		load:[
+			"js/iidxsd.js"
+		],
+		complete:function(){
+			IIDXSD.init();
+		}
+	}]);
+})();

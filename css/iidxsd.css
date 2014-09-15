@@ -1,0 +1,702 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+/**
+ * base
+ */
+html {
+  font-size: 80%;
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+body {
+  background-color: #d7e6ed;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q3ZTZlZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d7e6ed));
+  background-image: -webkit-linear-gradient(top, #ffffff, #d7e6ed);
+  background-image: -moz-linear-gradient(top, #ffffff, #d7e6ed);
+  background-image: -o-linear-gradient(top, #ffffff, #d7e6ed);
+  background-image: linear-gradient(top, #ffffff, #d7e6ed);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #333333;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-size: 0.9em;
+}
+
+h1, body.about article h2, body.howtouse article h2, body.link article h2, body.about article h3, body.howtouse body.about article h3, body.about body.howtouse article h3, body.link body.about article h3, body.about body.link article h3, body.howtouse article h3, body.link body.howtouse article h3, body.howtouse body.link article h3, body.link article h3 {
+  margin: 0px;
+  padding: 20px;
+  text-align: left;
+}
+
+table {
+  margin: auto;
+  text-align: center;
+  border: 1px solid #DDDDDD;
+  border-spacing: 1;
+  width: 95%;
+}
+table h3 {
+  text-align: center;
+  font-size: 100%;
+  padding: 5px 0px;
+  margin: -3px;
+  background-color: #99A0AA;
+}
+table td, table th {
+  padding: 2px;
+}
+table th {
+  background-color: #99AACC;
+}
+
+a {
+  color: #6699FF;
+}
+
+img {
+  border: 0;
+}
+
+.dmusic {
+  margin: 0px;
+  padding: 0px;
+  border: 1px outset #333333;
+  background-color: #666666;
+  color: #DDDDDD;
+  font-size: 80%;
+}
+
+.N {
+  color: #336699;
+}
+
+.H {
+  color: #666633;
+}
+
+.A {
+  color: #993333;
+}
+
+input, select {
+  margin: 5px;
+  padding: 5px;
+  border: 0;
+  background: #DDDDDD;
+  border-radius: 0px;
+}
+input[type^="button"], select[type^="button"] {
+  background: #AACCDD;
+  padding: 5px 15px;
+  -webkit-appearance: none;
+}
+input[type^="checkbox"], select[type^="checkbox"] {
+  border: 0px;
+  background: #AACCDD;
+  padding: 0px;
+}
+
+select {
+  -webkit-appearance: pop-up-menu;
+}
+
+footer {
+  background: #000000;
+  width: 100%;
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  bottom: 0px;
+  z-index: 10;
+}
+footer ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+footer ul li {
+  width: 75px;
+  float: left;
+  font-size: 0.65em;
+}
+footer ul li a {
+  text-align: center;
+  color: #F0F0F0;
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+article {
+  padding-bottom: 100px;
+}
+
+/******************************************
+	TOP
+******************************************/
+body.top article {
+  position: relative;
+  clear: both;
+  padding-bottom: 0px;
+}
+body.top #quickmenu {
+  position: relative;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  color: #FFFFFF;
+  margin: auto;
+  margin-top: 30px;
+}
+body.top #quickmenu #menuInfo, body.top #quickmenu #versionAC, body.top #quickmenu #versionCS, body.top #quickmenu #versionALL {
+  margin: 0 auto;
+}
+body.top #quickmenu h1, body.top #quickmenu body.about article h2, body.about article body.top #quickmenu h2, body.top #quickmenu body.howtouse article h2, body.howtouse article body.top #quickmenu h2, body.top #quickmenu body.link article h2, body.link article body.top #quickmenu h2, body.top #quickmenu body.about article h3, body.about article body.top #quickmenu h3, body.top #quickmenu body.howtouse article h3, body.howtouse article body.top #quickmenu h3, body.top #quickmenu body.link article h3, body.link article body.top #quickmenu h3 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 3em;
+  line-height: 160px;
+}
+@media screen and (max-width: 650px) {
+  body.top #quickmenu h1, body.top #quickmenu body.about article h2, body.about article body.top #quickmenu h2, body.top #quickmenu body.howtouse article h2, body.howtouse article body.top #quickmenu h2, body.top #quickmenu body.link article h2, body.link article body.top #quickmenu h2, body.top #quickmenu body.about article h3, body.about article body.top #quickmenu h3, body.top #quickmenu body.howtouse article h3, body.howtouse article body.top #quickmenu h3, body.top #quickmenu body.link article h3, body.link article body.top #quickmenu h3 {
+    font-size: 2.5em;
+    line-height: 140px;
+  }
+}
+body.top #quickmenu h1.ac, body.top #quickmenu body.about article h2.ac, body.about article body.top #quickmenu h2.ac, body.top #quickmenu body.howtouse article h2.ac, body.howtouse article body.top #quickmenu h2.ac, body.top #quickmenu body.link article h2.ac, body.link article body.top #quickmenu h2.ac, body.top #quickmenu body.about article h3.ac, body.about article body.top #quickmenu h3.ac, body.top #quickmenu body.howtouse article h3.ac, body.howtouse article body.top #quickmenu h3.ac, body.top #quickmenu body.link article h3.ac, body.link article body.top #quickmenu h3.ac {
+  background: #CC3333;
+}
+body.top #quickmenu h1.cs, body.top #quickmenu body.about article h2.cs, body.about article body.top #quickmenu h2.cs, body.top #quickmenu body.howtouse article h2.cs, body.howtouse article body.top #quickmenu h2.cs, body.top #quickmenu body.link article h2.cs, body.link article body.top #quickmenu h2.cs, body.top #quickmenu body.about article h3.cs, body.about article body.top #quickmenu h3.cs, body.top #quickmenu body.howtouse article h3.cs, body.howtouse article body.top #quickmenu h3.cs, body.top #quickmenu body.link article h3.cs, body.link article body.top #quickmenu h3.cs {
+  clear: both;
+  background: #CC9933;
+}
+body.top #quickmenu h1.all, body.top #quickmenu body.about article h2.all, body.about article body.top #quickmenu h2.all, body.top #quickmenu body.howtouse article h2.all, body.howtouse article body.top #quickmenu h2.all, body.top #quickmenu body.link article h2.all, body.link article body.top #quickmenu h2.all, body.top #quickmenu body.about article h3.all, body.about article body.top #quickmenu h3.all, body.top #quickmenu body.howtouse article h3.all, body.howtouse article body.top #quickmenu h3.all, body.top #quickmenu body.link article h3.all, body.link article body.top #quickmenu h3.all {
+  clear: both;
+  background: #3399CC;
+}
+body.top #quickmenu h1.all a, body.top #quickmenu body.about article h2.all a, body.about article body.top #quickmenu h2.all a, body.top #quickmenu body.howtouse article h2.all a, body.howtouse article body.top #quickmenu h2.all a, body.top #quickmenu body.link article h2.all a, body.link article body.top #quickmenu h2.all a, body.top #quickmenu body.about article h3.all a, body.about article body.top #quickmenu h3.all a, body.top #quickmenu body.howtouse article h3.all a, body.howtouse article body.top #quickmenu h3.all a, body.top #quickmenu body.link article h3.all a, body.link article body.top #quickmenu h3.all a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+}
+body.top #quickmenu #menuInfo ul {
+  list-style-type: none;
+}
+body.top #quickmenu #menuInfo ul li {
+  display: block;
+  color: #666666;
+  background: #F0F0F3;
+  font-size: 1.8em;
+  line-height: 160px;
+}
+@media screen and (max-width: 650px) {
+  body.top #quickmenu #menuInfo ul li {
+    font-size: 1.5em;
+    line-height: 140px;
+  }
+}
+body.top #quickmenu #menuInfo ul li a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: #666666;
+}
+body.top #quickmenu .container {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  background: #7fa0cc;
+  float: left;
+  margin: 5px;
+}
+@media screen and (max-width: 650px) {
+  body.top #quickmenu .container {
+    width: 140px;
+    height: 140px;
+  }
+}
+body.top #quickmenu .container h2, body.top #quickmenu .container body.about article h3, body.about article body.top #quickmenu .container h3, body.top #quickmenu .container body.howtouse article h3, body.howtouse article body.top #quickmenu .container h3, body.top #quickmenu .container body.link article h3, body.link article body.top #quickmenu .container h3 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  font-size: 1.6em;
+  line-height: 160px;
+}
+@media screen and (max-width: 650px) {
+  body.top #quickmenu .container h2, body.top #quickmenu .container body.about article h3, body.about article body.top #quickmenu .container h3, body.top #quickmenu .container body.howtouse article h3, body.howtouse article body.top #quickmenu .container h3, body.top #quickmenu .container body.link article h3, body.link article body.top #quickmenu .container h3 {
+    font-size: 1.3em;
+    line-height: 140px;
+  }
+}
+body.top #quickmenu .container ul {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+body.top #quickmenu .container ul li {
+  display: block;
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  background: #e0eeff;
+  font-size: 1.4em;
+  line-height: 60px;
+  font-weight: bold;
+}
+@media screen and (max-width: 650px) {
+  body.top #quickmenu .container ul li {
+    font-size: 1.1em;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+body.top #quickmenu .container ul li a {
+  text-decoration: none;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  color: #333333;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body.top #quickmenu .container ul li a:hover {
+  background: #FFFFFF;
+}
+body.top #quickmenu .container ul.sublink {
+  visibility: hidden;
+}
+body.top #quickmenu .container #barcode {
+  display: block;
+  margin: 5px;
+  border: 1px solid #BBBBBB;
+}
+@media screen and (max-width: 650px) {
+  body.top #quickmenu .container #barcode {
+    width: 128px;
+    height: 128px;
+  }
+}
+body.top #quickmenu .latest {
+  background: #5f80ac;
+}
+body.top footer {
+  display: none;
+}
+
+/******************************************
+	data
+******************************************/
+body.data aside#modalContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+body.data h2, body.data body.about article h3, body.about article body.data h3, body.data body.howtouse article h3, body.howtouse article body.data h3, body.data body.link article h3, body.link article body.data h3 {
+  font-family: 'Quicksand', sans-serif;
+  width: 95%;
+  font-size: 170%;
+  padding: 5px 0px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #666666;
+  color: #DDDDDD;
+  text-align: center;
+  clear: both;
+}
+body.data h2 .msc_num, body.data body.about article h3 .msc_num, body.about article body.data h3 .msc_num, body.data body.howtouse article h3 .msc_num, body.howtouse article body.data h3 .msc_num, body.data body.link article h3 .msc_num, body.link article body.data h3 .msc_num {
+  margin-left: 2em;
+  color: #333333;
+}
+body.data table#datatable .back0 {
+  background-color: #EEF0F9;
+}
+body.data table#datatable .back1 {
+  background-color: #DDE0EE;
+}
+body.data table#datatable .asc, body.data table#datatable .desc {
+  margin: 0px;
+  padding: 1px;
+  color: #333333;
+  text-decoration: none;
+  padding-top: 0px;
+  font-size: small;
+}
+body.data table#datatable .asc {
+  background-color: #AA9966;
+}
+body.data table#datatable .desc {
+  background-color: #6699AA;
+}
+body.data table#datatable .msc {
+  text-align: left;
+}
+@media screen and (max-width: 650px) {
+  body.data table#datatable {
+    width: 100%;
+  }
+}
+
+/******************************************
+	about
+******************************************/
+body.about article, body.howtouse article, body.link article {
+  position: relative;
+  margin: auto;
+  max-width: 800px;
+  padding: 0px;
+}
+body.about article h1, body.howtouse article h1, body.link article h1, body.about article h2, body.howtouse body.about article h2, body.about body.howtouse article h2, body.link body.about article h2, body.about body.link article h2, body.about body.howtouse article h2, body.howtouse body.about article h2, body.howtouse article h2, body.link body.howtouse article h2, body.howtouse body.link article h2, body.about body.link article h2, body.link body.about article h2, body.howtouse body.link article h2, body.link body.howtouse article h2, body.link article h2, body.about article h3, body.howtouse body.about article h3, body.about body.howtouse article h3, body.link body.about article h3, body.about body.link article h3, body.howtouse body.about article h3, body.howtouse body.about article h3, body.link body.howtouse body.about article h3, body.howtouse body.about body.link article h3, body.about body.howtouse article h3, body.about body.howtouse article h3, body.link body.about body.howtouse article h3, body.about body.howtouse body.link article h3, body.link body.about article h3, body.howtouse body.link body.about article h3, body.link body.about body.howtouse article h3, body.link body.about article h3, body.about body.link article h3, body.howtouse body.about body.link article h3, body.about body.link body.howtouse article h3, body.about body.link article h3, body.about body.howtouse article h3, body.howtouse body.about article h3, body.howtouse article h3, body.link body.howtouse article h3, body.howtouse body.link article h3, body.about body.link body.howtouse article h3, body.link body.howtouse body.about article h3, body.link body.howtouse article h3, body.link body.howtouse article h3, body.about body.howtouse body.link article h3, body.howtouse body.link body.about article h3, body.howtouse body.link article h3, body.howtouse body.link article h3, body.about body.link article h3, body.link body.about article h3, body.howtouse body.link article h3, body.link body.howtouse article h3, body.link article h3 {
+  width: 160px;
+  line-height: 160px;
+  text-align: center;
+  background: #F0F0F3;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3em;
+  margin-bottom: 15px;
+  color: #666666;
+}
+body.about article h2, body.howtouse article h2, body.link article h2, body.about article h3, body.howtouse body.about article h3, body.about body.howtouse article h3, body.link body.about article h3, body.about body.link article h3, body.about body.howtouse article h3, body.howtouse body.about article h3, body.howtouse article h3, body.link body.howtouse article h3, body.howtouse body.link article h3, body.about body.link article h3, body.link body.about article h3, body.howtouse body.link article h3, body.link body.howtouse article h3, body.link article h3 {
+  margin: 5px;
+  background: #666666;
+  color: #FFFFFF;
+  font-size: 1.2em;
+}
+body.about article h3, body.howtouse article h3, body.link article h3 {
+  background: #F6F9FC;
+  color: #333333;
+}
+body.about article section, body.howtouse article section, body.link article section {
+  padding: 15px;
+  position: relative;
+  background: #FFFFFF;
+}
+body.about article section section, body.howtouse article section section, body.link article section section {
+  padding: 0px;
+}
+body.about article ul, body.howtouse article ul, body.link article ul {
+  margin: 5px;
+  padding: 15px;
+  background: #FFFFFF;
+}
+body.about article p, body.howtouse article p, body.link article p {
+  margin: 5px;
+  padding: 15px;
+  background: #FFFFFF;
+}
+
+/******************************************
+	how to use
+******************************************/
+body.howtouse article nav {
+  padding: 5px;
+  background: #FFFFFF;
+  font-size: 1.5em;
+}
+body.howtouse article nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+body.howtouse article nav ul li {
+  display: block;
+  color: #666666;
+  background: #F0F0F3;
+  line-height: 3em;
+  margin-bottom: 5px;
+}
+body.howtouse article nav ul li a {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  padding: 15px;
+  color: #666666;
+}
+body.howtouse article h1, body.howtouse body.about article h2, body.about body.howtouse article h2, body.howtouse article h2, body.howtouse body.link article h2, body.link body.howtouse article h2, body.howtouse body.about article h3, body.about body.howtouse article h3, body.howtouse body.about article h3, body.about body.howtouse article h3, body.howtouse body.link body.about article h3, body.link body.about body.howtouse article h3, body.howtouse body.about body.link article h3, body.about body.link body.howtouse article h3, body.howtouse article h3, body.link body.howtouse article h3, body.howtouse body.link article h3, body.howtouse body.link article h3, body.link body.howtouse article h3 {
+  font-size: 1.8em;
+}
+body.howtouse article h2, body.howtouse body.about article h3, body.about body.howtouse article h3, body.howtouse article h3, body.howtouse body.link article h3, body.link body.howtouse article h3 {
+  font-size: 1.2em;
+}
+body.howtouse article h2 a, body.howtouse body.about article h3 a, body.about body.howtouse article h3 a, body.howtouse article h3 a, body.howtouse body.link article h3 a, body.link body.howtouse article h3 a, body.howtouse article h3 a {
+  color: #FFFFFF;
+}
+body.howtouse article dl dt {
+  margin-top: 15px;
+  width: 300px;
+  text-align: center;
+  background: #F6F9FC;
+  height: 50px;
+  line-height: 50px;
+}
+body.howtouse article dl dd {
+  margin-top: 15px;
+  padding: 15px;
+  background: #F9FCFF;
+}
+body.howtouse article #barcode {
+  margin-top: 10px;
+  border: 1px solid #EEEEEE;
+}
+
+/******************************************
+	Link
+******************************************/
+body.link article ul {
+  list-style-type: square;
+}
+body.link article ul li {
+  line-height: 3em;
+}
+
+/******************************************
+	main
+******************************************/
+#mainobj {
+  text-align: center;
+  margin: auto;
+}
+
+/******************************************
+	modal
+******************************************/
+#modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  z-index: 1000;
+}
+#modal .background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #000000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+}
+#modal #mdetail_base, #modal #mdetail_notes, #modal #mdetail_dif_change {
+  width: 480px;
+  background-color: #FFFFFF;
+}
+#modal #mdetail_base td, #modal #mdetail_notes td, #modal #mdetail_dif_change td {
+  word-break: break-all;
+}
+#modal div.d_t {
+  width: 480px;
+  margin: auto;
+  padding: auto;
+  padding-top: 30px;
+}
+#modal div.d_t .close {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #FFFFFF;
+  display: block;
+  width: 120px;
+  padding: 5px;
+  background: #334455;
+  text-align: center;
+}
+#modal div.d_t .close:hover {
+  background: #445566;
+}
+#modal div.d_t td {
+  background: #EEF0F9;
+}
+#modal .container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 650px) {
+  #modal .container {
+    width: 100%;
+  }
+  #modal .container #mdetail_base, #modal .container #mdetail_notes, #modal .container #mdetail_dif_change {
+    width: 100%;
+  }
+  #modal .container div.d_t {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 500px) {
+  #modal .container {
+    height: 300px;
+  }
+  #modal .container #mdetail_dif_change {
+    display: none;
+  }
+}
+#modal footer {
+  display: none;
+}
+
+/******************************************
+	setting
+******************************************/
+#vdetail {
+  position: fixed;
+  width: 650px;
+  height: 330px;
+  display: none;
+  border-top: 0px;
+  background-color: #E0E6E9;
+  top: 0px;
+  right: 0px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+  opacity: 0.95;
+}
+#vdetail fieldset {
+  border: 0;
+}
+#vdetail legend {
+  display: block;
+  width: 100%;
+  height: 2em;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  padding-top: 10px;
+  background: #D0D9DD;
+}
+#vdetail dt {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#vdetail dd {
+  margin: 0px;
+  padding: 0px;
+}
+#vdetail dd a {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 0px;
+  text-decoration: none;
+  width: 100px;
+  background: #CCDDEE;
+}
+#vdetail dd a:hover {
+  background: #FFFFFF;
+}
+#vdetail label {
+  background-color: #FFFFFF;
+  display: inline-block;
+  width: 48px;
+  text-align: center;
+}
+#vdetail #controlSetting {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 306px;
+  width: 100px;
+  height: 15px;
+}
+@media screen and (max-width: 650px) {
+  #vdetail {
+    width: 330px;
+    height: 380px;
+  }
+  #vdetail dd a {
+    margin-top: 5px;
+    width: 95px;
+  }
+  #vdetail #controlSetting {
+    top: 350px;
+  }
+}
+
+.mdetail table {
+  margin: 0px;
+  width: 300px;
+  clear: both;
+}
+
+#q_search {
+  float: right;
+}
+
+th.name {
+  background-color: #D0D6D9;
+}
+
+th.SP, th.DP {
+  background-color: #557766;
+}
+
+.wss {
+  background: #666666;
+}
+.wss a {
+  color: #FFFFFF;
+}
+
+/******************************************
+	DL
+******************************************/
+#download {
+  text-align: right;
+}
+#download a {
+  text-decoration: none;
+  padding: 2px;
+  border: 2px outset #666666;
+  background: #FFFFFF;
+  color: #333333;
+}
+
+/******************************************
+	FORM
+******************************************/
+#selectVersion {
+  margin-left: 15px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+#searchForm {
+  margin-right: 15px;
+  margin-bottom: 30px;
+  float: right;
+}
+
+/*----------------------------------------
+	HTML5
+----------------------------------------*/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/*----------------------------------------
+    WebKit
+ ----------------------------------------*/
